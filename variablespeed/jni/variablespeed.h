@@ -86,7 +86,7 @@ class AudioEngine {
   bool HasSampleRateAndChannels();
   SLuint32 GetSLSampleRate();
   SLuint32 GetSLChannels();
-  SLuint32 GetChannelCount();
+  size_t GetChannelCount();
 
   // The single global audio engine instance.
   static AudioEngine* audioEngine_;
